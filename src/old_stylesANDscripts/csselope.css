@@ -1,0 +1,730 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../fonts/Papyrus.eot); /* IE9 Compat Modes */
+	src: local('Papyrus'),
+		url('../fonts/Papyrus.eot') format('eot'),
+		url('../fonts/Papyrus.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Papyrus.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/Papyrus.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Papyrus.svg') format('svg');
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+body {
+	--s1vw: 1vw;
+	--s1hvw: 1.5vw;
+	--s2vw: 2vw;
+	--s4vw: 4vw;
+	--s7vw: 7vw;
+	--s10vw: 10vw;
+	--sm7vw: -7vw;
+	--sm20vw: -2vw;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Papyrus/*, fantasy, Goudy Old Style, Palatino Linotype*/;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+
+#navDiv{
+	width: 100%;
+	float: left;
+	margin-bottom: 8vw;
+	margin-top: 2vw;
+}
+
+.photoNav{
+	float: left;
+	width: 10vw;
+	height: 11vw;
+	margin-left: 1vw;
+	overflow: hidden;
+
+}
+.photoNav img{
+	width: 10vw;
+	margin-top: 0.5vw;
+}
+
+
+
+
+#navUL{
+	float: left;
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	overflow:hidden;
+	height: 11.5vw;
+	width: 75vw;
+}
+
+#navUL li{
+}
+
+.photoli img{
+	width: 11.5vw;
+	float: left;
+	margin-left: 1vw;
+	margin-bottom: 1vw;
+}
+
+
+#contactLine {
+	position: absolute;
+	font-size: 2vw;
+	color:#666;
+	width: 100vw;
+	margin-top: -3vw;
+}
+
+#contactLine a:link {
+	color:#666;
+	text-decoration: none; }
+#contactLine a:visited {
+	color:#666;
+	font-style:normal; }
+#contactLine a:hover {
+	color:#FF5DC7; }
+#contactLine a:active {
+	color:#FF5DC7;
+	font-style:normal;
+}
+
+
+/*-----------------------Main Section----------------*/
+
+/*------WED Content-----*/
+
+
+#breath{
+	clear: both;
+}
+
+#line1{
+	width: 28%;
+	font-size: 5vw;
+	margin: 0 0 -4% 11%;
+}
+
+#elopeContent{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: left;
+}
+
+
+#elopeContent{
+	width: 100%;
+}
+
+#background01{
+	width: 100vw;
+	height: 200vh;
+	background-image: url("../photos/PhotoR/l/JacobMarries_Art03.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#intro{
+	margin-left: 5555%;
+}
+#par01{
+	font-size: 2.5vw;
+	width: 45%;
+	margin: 10% 0 0 3%;
+	padding: 2%;
+	background: white;
+	opacity: 80%;
+}
+
+#backgroundWhite01{
+		background-color: white;
+		width: 99vw;
+		border: solid;
+	}
+#backgroundWhite01 p{
+	width: 50%;
+	font-size: 2.5vw;
+	margin: 2vw auto 2vw auto;
+
+}
+
+
+#background02{
+	width: 100vw;
+	height: 250vh;
+	background-image: url("../photos/PhotoR/l/JacobMarries_Art02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.gone{
+	margin-left: -5000vh;
+}
+
+#par02{
+	margin: 60% 20% 30% 20%;
+	width: 50vw;
+	font-size: 2.5vw;
+	padding: 2%;
+	background: white;
+	opacity: 80%;
+}
+
+#backgroundWhite02{
+	font-size: 2.5vw;
+	background-color: white;
+	width: 100%;
+	height: 75vh;
+}
+
+#backgroundWhite02 p{
+	margin-top: 20%;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#background03{
+	width: 100%;
+	height: 250vh;
+	background-image: url("../photos/PhotoR/l/JacobMarries_elope01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#par03{
+	font-size: 2.5vw;
+	background-color: white;
+	opacity: 80%;
+	margin-top: 65%;
+	padding: 2%;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#backgroundWhite03{
+	background-color: white;
+	width: 100%;
+	height: 5vh;
+}
+
+#background04{
+	width: 100%;
+	height: 250vh;
+	background-image: url("../photos/PhotoR/l/JacobMarries_elope03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#par04{
+	font-size: 2.5vw;
+	background-color: white;
+	opacity: 80%;
+	margin-top: 65%;
+	padding: 2%;
+	width: 35%;
+	margin-left: 5%;
+}
+
+#backgroundWhite04{
+	background-color: white;
+	width: 100%;
+}
+
+
+/*-----PROCESS-----*/
+#processUl{
+	list-style-type: none;
+}
+
+.steps{
+	clear: left;
+	font-size: 2.5vw;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+}
+.steps img{
+	width: 100%;
+}
+
+.steps p{
+	background-color: white;
+	opacity: 80%;
+	padding: 2%;
+}
+
+#processUl{
+padding: 0;
+margin: 0;
+}
+
+/*Step 1*/
+#step01{
+	background-image: url('../photos/backgrounds/won.jpg');
+	background-size: cover;
+}
+#step01 img{
+	margin-top: 50%;
+}
+#step01 p{
+	margin-top: -55%;
+	margin-bottom: 20%;
+	width: 23vw;
+	margin-left: 65%;
+	background-color: #f9ca47;
+}
+
+
+/*Step02*/
+#cover02{
+	background-color: white;
+	margin-top: 1%;
+}
+#step02{
+	background-image: url('../photos/backgrounds/two.jpg');
+	background-size:cover;
+}
+#step02 img{
+	margin-top: 55%;
+}
+#step02 p{
+	margin-top: -55%;
+	width: 35%;
+	margin-left: 8%;
+	margin-bottom: 15%;
+	background-color: #f5bee0;
+}
+
+iframe{
+	margin-bottom: 0;
+	width: 80%;
+	height: 75vh;
+}
+
+
+/*Step03*/
+#cover03{
+	background-color: white;
+	margin-top: 45%;
+}
+#step03{
+	background-image: url('../photos/backgrounds/three.jpg');
+	background-size:cover;
+}
+#step03 img{
+	float: left;
+	margin-left: 5%;
+	width: 50%;
+	margin-top: 2%;
+}
+#step03 p{
+	float: left;
+	margin-left: 5%;
+	width: 30%;
+	font-size: 2vw;
+	background-color: #f9ca47;
+}
+
+
+/*--CEREMONY WORDING--*/
+#ceremonyWording{
+	clear: left;
+	width: 100%;
+}
+
+.allWording{
+	height: 100%;}
+.allWording iframe{
+	margin-bottom: 5%;}
+
+#ceremonyWording button{
+	margin-top: 5%;
+}
+#ceremonyWording iframe{
+	max-width: 750px;
+	heigth: 80%;
+}
+
+.buttonOn{
+	font-size: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: .5vw 1vw 1vw .5vw #888888;
+	background-color: #f5bee0;
+}
+.buttonOff{
+	font-size: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: .5vw 1vw 1vw .5vw #888888;
+	background-color: #CCC;
+}
+#engWord{
+	border: solid;
+	box-shadow: .5vw 1vw 1vw .5vw #888888;
+}
+#spnWord{
+	border: solid;
+	box-shadow: .5vw 1vw 1vw .5vw #888888;
+}
+#inclusive{
+	border: solid;
+	box-shadow: .5vw 1vw 1vw .5vw #888888;
+}
+
+
+/*---Step 04---*/
+#step04{
+	background-image: url('../photos/backgrounds/four.jpg');
+	background-size:cover;
+}
+
+#step04 p{
+	margin-top: 45%;
+	background-color: white;
+	opacity: 100%;
+	margin-bottom: 0;
+}
+
+/*---Step 05---*/
+#step05{
+	background-image: url('../photos/backgrounds/five.jpg');
+	background-size:cover;
+}
+
+#step05 img{
+	margin-top: 40%;
+}
+
+#step05 p{
+	width: 35%;
+	margin-left: 55%;
+	margin-top: -60%;
+	margin-bottom: 30%;
+	padding: 2%;
+	background-color: #f9ca47;
+}
+
+/*---Step 06---*/
+#step06{
+	background-image: url('../photos/backgrounds/six.jpg');
+	background-size:cover;
+}
+#step06 img{
+	margin-top: 40%;
+}
+#step06 p{
+	width: 80%;
+	padding: 2%;
+	margin: -65% 0 55% 2%;
+	background-color: #f5bee0;
+}
+
+/*--Step 07 --*/
+#step07{
+	background-image: url('../photos/backgrounds/seven.jpg');
+	background-size:cover;
+}
+#step07 img{
+	margin-top: 45%;
+}
+#step07 p{
+background-color: white;
+opacity: 100%;
+margin-top: 0;
+background-color: #f9ca47;
+
+}
+
+#step08{
+	background: white;
+}
+
+
+/*iPad*/
+@media only screen and (max-width: 1025px) {
+
+		/*--------------- TITLE NAVIGATION -----------------------*/
+
+		.photoNav{
+			height: 13vw;
+			width: 9vw;
+
+		}
+		.photoNav img{
+			margin-top: 2vw;
+			width: 9vw;
+		}
+
+		#navUL{
+			height: 14vw;
+		}
+
+		.photoli img{
+			width: 14vw;
+		}
+
+		#contactLine {
+			font-size: 2vw;
+			margin-top: -3vw;
+		}
+
+
+		/*-----------------------Main Section----------------*/
+
+
+
+	#background01{
+		background-image: url("../photos/PhotoR/JacobMarries_Art03L.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position-x: center;
+
+	}
+	#par01 {
+    font-size: 4vw;
+    width: 80%;
+    margin: 40% auto 0 auto;
+	}
+
+	#backgroundWhite01{
+		border: none;
+		margin: 50vw 0 60vw 0;
+		}
+	#backgroundWhite01 p{
+		width: 70%;
+		font-size: 4vw;
+		margin: 2vw auto 2vw auto;
+
+	}
+
+
+	#background02{
+		background-image: url("../photos/PhotoR/JacobMarries_Art02.jpg");
+		width: 100vw;
+		background-position-x: 35%;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+
+	}
+	#par02{
+		width: 80%;
+		margin: 10% auto 0 auto;
+	}
+	#par02 p{
+		font-size: 4vw;
+    width: 100%;
+    margin: 10% auto 0 auto;
+	}
+	#backgroundWhite02 p{
+		font-size: 4vw;
+	}
+	#background03{
+		background-position-x: center;
+		background-attachment: scroll;
+		width: 100vw;
+	}
+	#par03 p{
+		font-size: 4vw;
+	}
+	#backgroundWhite03{
+		height: 0;
+		margin-top: 0;
+	}
+	#background04{
+		background-position-x: 61%;
+		background-attachment: scroll;
+		width: 100vw;
+	}
+	#par04{
+		width: 80%;
+		margin: 65% auto 0 auto;
+	}
+	#par04 p{
+		margin: 0 auto 0 auto;
+		font-size: 4vw;
+	}
+
+	#step01{
+		background-position: center;
+		background-attachment: scroll;
+		background-position-y: 5%;
+		border: solid;
+
+	}
+	#step01 p {
+    margin: 0 auto 5% auto;
+    width: 79vw;
+		padding-right: 10%;
+		padding-left: 10%;
+    background-color: #FECA0C;
+    font-size: 4vw;
+    opacity: 100;
+	}
+	#cover02{
+		background-color: #FABEE0;
+	}
+
+#step02{
+
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+	}
+	#step02 p{
+		margin: 0 auto 0 auto;
+		background-color: #FABEE0;
+		width: 80%;
+		font-size: 4vw;
+	}
+	#cover03{
+		background-color: #FECA0C;
+	}
+	#cover03 p{
+		float: none;
+		font-size: 4vw;
+		margin: 0 auto 0 auto;
+		width: 80%;
+		background-color: unset;
+	}
+
+	#step03{
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+		background-repeat: repeat;
+
+	}
+	#step03 img{
+		margin-top: 11%;
+	}
+
+	#step04{
+		background-position-y: 5%;
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+	}
+	#step04 p {
+    margin-top: 45%;
+    background-color: #f5bee0;
+    opacity: 100%;
+    margin-bottom: 0;
+    font-size: 4vw;
+	}
+
+	#step05{
+		background-position-y: 5%;
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+	}
+	#step05 p{
+		background-color: #f9ca47;
+		margin: 0 auto 0 auto;
+		font-size: 4vw;
+		width: 80%;
+		opacity: 100;
+	}
+
+	#step06{
+		background-position-y: 5%;
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+	}
+	#step06 p{
+		background-color: #f5bee0;
+		font-size: 4vw;
+		width: 80%;
+		margin: 0 auto 0 auto;
+		opacity: 100;
+	}
+
+	#step07{
+		background-position-y: 5%;
+		background-size: 100% auto;
+		border: solid;
+		background-attachment: scroll;
+	}
+	#step07 p{
+		background-color: #f9ca47;
+		margin: 0 auto 0 auto;
+		font-size: 4vw;
+		width: 80%;
+		opacity: 100;
+	}
+	#step08{
+		margin-top: 50%;
+	}
+}
+/*iphone*/
+@media only screen and (max-width: 600px) {
+
+
+	/*--------------- TITLE NAVIGATION -----------------------*/
+
+
+	.photoNav{
+		height: 16.5vw;
+	}
+	.photoNav img{
+		margin-top: 3.5vw;
+	}
+
+	#navUL{
+		height: 18vw;
+		width: 72vw;
+	}
+	.photoli img{
+		width: 17vw;
+	}
+	#contactLine {
+		font-size: 2vw;
+		margin-top: -3vw;
+	}
+
+
+	/*-----------------------Main Section----------------*/
+
+
+
+
+	#background01{
+		background-position: 54%;
+	}
+	#background03{
+		background-position-x: 51%;
+	}
+	#background04 {
+    background-position-x: 61%;
+	}
+}

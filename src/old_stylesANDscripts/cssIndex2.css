@@ -1,0 +1,124 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../fonts/Papyrus.eot); /* IE9 Compat Modes */
+	src: local('Papyrus'),
+		url('../fonts/Papyrus.eot') format('eot'),
+		url('../fonts/Papyrus.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Papyrus.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/Papyrus.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Papyrus.svg') format('svg');
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+body {
+	--s1vw: 1vw;
+	--s1hvw: 1.5vw;
+	--s2vw: 2vw;
+	--s4vw: 4vw;
+	--s7vw: 7vw;
+	--s10vw: 10vw;
+	--sm7vw: -7vw;
+	--sm20vw: -2vw;
+}
+
+#container{
+	position: relative;
+	text-align: center;
+	font-family: Papyrus/*, fantasy, Goudy Old Style, Palatino Linotype*/;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+#titleSection {
+	position: relative;
+	margin: 0 auto 5% auto;
+	width: 90%;
+}
+
+#theTitleDiv{
+	position: relative;
+	color: #989534;
+	font-size: 12vw;
+}
+
+#contactLine {
+	position: relative;
+	margin-top: -9vw;
+	margin-bottom: 7vw;
+	font-size: 3vw;
+	color:#666;
+}
+
+#contactLine a:link {
+	color:#666;
+	text-decoration: none; }
+#contactLine a:visited {
+	color:#666;
+	font-style:normal; }
+#contactLine a:hover {
+	color:#FF5DC7; }
+#contactLine a:active {
+	color:#FF5DC7;
+	font-style:normal;
+}
+
+
+#tagwords{
+	position: relative;
+	width: 86vw;
+	font-size: 3vw;
+	margin-bottom: -1vw;
+	color: #666;
+	font-family: Papyrus;
+	text-align: right;
+
+}
+
+/*-----------------------MAIN NAVIGATION----------------*/
+
+#mainNavigation{
+	clear: both;
+	position: relative;
+	width: 90%;
+	padding: 0;
+	margin: 0 auto 2% auto;
+	}
+
+#mainNavigation ul{
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+#infoLinks img{
+	width: 100%;}
+#infoLinks li{
+	list-style-type: none;
+}
+.navPhotos{
+	float: left;
+	width: 33%;
+}
+#last{
+	display: none;
+}
+
+/*iphone*/
+
+
+@media screen and (max-width: 600px) {
+	.navPhotos {
+    width: 50%;
+	}
+	#last{
+		display: inline;
+	}
+}

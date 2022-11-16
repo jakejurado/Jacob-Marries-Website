@@ -1,0 +1,449 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../fonts/Papyrus.eot); /* IE9 Compat Modes */
+	src: local('Papyrus'),
+		url('../fonts/Papyrus.eot') format('eot'),
+		url('../fonts/Papyrus.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Papyrus.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/Papyrus.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Papyrus.svg') format('svg');
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+body {
+	--s1vw: 1vw;
+	--s1hvw: 1.5vw;
+	--s2vw: 2vw;
+	--s4vw: 4vw;
+	--s7vw: 7vw;
+	--s10vw: 10vw;
+	--sm7vw: -7vw;
+	--sm20vw: -2vw;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Papyrus/*, fantasy, Goudy Old Style, Palatino Linotype*/;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+navDiv{
+	width: 100%;
+	float: left;
+}
+
+.photoNav{
+	float: left;
+	width: 10vw;
+	height: 11vw;
+	margin-left: 1vw;
+	overflow: hidden;
+
+}
+.photoNav img{
+	width: 10vw;
+	margin-top: 0.5vw;
+}
+
+
+
+
+#navUL{
+	float: left;
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	overflow:hidden;
+	height: 11.5vw;
+	width: 75vw;
+}
+
+#navUL li{
+}
+
+.photoli img{
+	width: 11.5vw;
+	float: left;
+	margin-left: 1vw;
+	margin-bottom: 1vw;
+}
+
+
+#contactLine {
+	position: relative;
+	font-size: 2vw;
+	color:#666;
+	width: 100vw;
+	margin-top: -2vw;
+	margin-bottom: -2vw;
+}
+
+#contactLine a:link {
+	color:#666;
+	text-decoration: none; }
+#contactLine a:visited {
+	color:#666;
+	font-style:normal; }
+#contactLine a:hover {
+	color:#FF5DC7; }
+#contactLine a:active {
+	color:#FF5DC7;
+	font-style:normal;
+}
+
+
+/*-----------------------Main Section----------------*/
+
+
+#breath{
+	clear: both;
+}
+
+#licenseContent{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#pageintro{
+	font-size: 2vw;
+}
+
+
+
+/*--Part01--*/
+
+#part01 h1{
+	text-align: right;
+	font-size: 5vw;
+	margin-bottom: -3vh;
+	margin-top: 8vw;
+	padding-right: 3vh;
+}
+
+#part01 img{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: solid;
+}
+
+#wording01{
+	width: 100%;
+	border: solid;
+	margin-top: -65%;
+	margin-bottom: 5%;
+}
+#part01 p{
+	font-size: 2vw;
+	background-color: white;
+	opacity: 70%;
+	padding: 2%;
+	margin-left: 2%;
+	width: 35%;
+}
+
+/*--Part02--*/
+#part02{
+width: 100%;
+background-image: url("../photos/PhotoR/l/JacobMarries_sign04.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+border-bottom: solid;
+margin-top: 15%;
+margin-bottom: 10%;
+}
+#part02_title p{
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 3vw;
+	text-align: left;
+	border-bottom: solid;
+	font-size: 4vw;
+}
+
+#wording02{
+	width: 75%;
+	background-color: white;
+	opacity: 80%;
+	font-size: 2vw;
+	padding: 2%;
+	margin: 75% 0 60% 10%;
+}
+#wording02 li{
+	margin-left: 20%;
+	text-align: left;
+}
+
+/*--Part03--*/
+#part03_title p{
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 3vw;
+	text-align: left;
+	border-bottom: solid;
+}
+#part03{
+	font-size: 2vw;
+}
+
+#part03image01{
+	width: 45%;
+	float: left;
+	border: solid;
+	margin-left: 10%;
+	margin-bottom: 7%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+
+#wording03a{
+	background-color: grey;
+	padding: 2%;
+	width: 65%;
+	margin: 2% auto 5% auto;
+}
+
+#compare{
+	clear: left;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 0 0;
+
+}
+#wording03b{
+	width: 80%;
+	margin: 0 auto 0 auto;
+	background-color: pink;
+	padding: 4%;
+	border-radius: 2vw;
+	text-align: left;
+}
+#wording03b li{
+	margin-bottom: 2vw;
+}
+
+
+
+#part04{
+	width: 100%;
+	background-image: url("../photos/PhotoR/l/JacobMarries_sign07.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#gone{
+	margin-left: -5555%;
+}
+#wording04 p{
+	margin: 50% 0 40% 0;
+	background-color: white;
+	opacity: 80%;
+	font-size: 2vw;
+	padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+#gone2{
+	margin-left: -5555%;
+}
+
+
+
+
+.faq{
+	width: 75%;
+	margin: 10% auto 0 auto;
+	font-size: 3vw;
+	text-align: center;
+	list-style-type: none;
+	border:groove;
+	padding-top: 2%;
+	box-shadow: 2vw 2vw 1vw #666;
+}
+
+.ques {
+	font-size: 1.75vw;
+	color: black;
+	font-weight: bold;
+	text-align: justify;
+	list-style-type: none;
+}
+
+.ansr {
+	font-size: 1.5vw;
+	color:#666;
+	text-align: justify;
+	margin: 0 4% 4% 2%;
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+
+		.photoNav{
+			height: 13vw;
+			width: 9vw;
+
+		}
+		.photoNav img{
+			margin-top: 2vw;
+			width: 9vw;
+		}
+
+		#navUL{
+			height: 14vw;
+		}
+
+		.photoli img{
+			width: 14vw;
+		}
+
+		#contactLine {
+			font-size: 2vw;
+			margin-top: -1vw;
+		}
+
+		#wording04 p {
+			margin-top: 35%;
+		}
+
+
+	#wording01{
+		border: unset;
+	}
+
+	#part01 h1{
+		margin: 10vw 0 -2vw; 0;
+		text-align: center;
+	}
+
+	#part01 p {
+		margin: 0 auto 0 auto;
+		width: 80%;
+		opacity: 100%;
+		font-size: 4vw;
+		margin-top: 65%;
+	}
+
+	#part02_title p {
+		text-align: center;
+	}
+	#part02{
+		background-attachment: scroll;
+		background-position-x: 72%;
+	}
+
+	#wording02 {
+	    width: 75%;
+	    font-size: 4vw;
+	    margin: 80% auto 80% auto;
+	}
+
+	#part03_title p {
+		font-size: 4vw;
+		text-align: center;
+	}
+	#part03image01 {
+		margin-left: 0;
+	}
+	#wording03a {
+		width: 80%;
+		font-size: 4vw;
+	}
+	#wording03b {
+		float: unset;
+		position: relative;
+		width: 80%;
+		font-size: 4vw;
+		margin: 0 auto 2% auto;
+	}
+
+	#wording03c {
+		float: unset;
+		width: 80%;
+		margin: 0 auto 0 auto;
+		font-size: 4vw;
+		}
+
+	#part04{
+		background-attachment: scroll;
+		background-size: 440vw;
+		background-position-x: 43%;
+		}
+	#wording04 p {
+		width: 80%;
+		margin: 100% auto 80% auto;
+		font-size: 4vw;
+	}
+	.faq{
+		font-size: 5vw;
+		width: 90%;
+	}
+	.ques{
+		font-size: 4vw;
+		padding-right: 2vw;
+	}
+	.ansr{
+		font-size: 3vw;
+	}
+
+}
+
+
+/*iphone*/
+@media only screen and (max-width: 600px) {
+
+
+	/*--------------- TITLE NAVIGATION -----------------------*/
+
+
+	.photoNav{
+		height: 16.5vw;
+	}
+	.photoNav img{
+		margin-top: 3.5vw;
+	}
+
+	#navUL{
+		height: 18vw;
+		width: 72vw;
+	}
+	.photoli img{
+		width: 17vw;
+	}
+	#contactLine {
+		font-size: 2vw;
+		margin-top: -1vw;
+	}
+
+
+	/*-----------------------Main Section----------------*/
+
+
+
+	/*-----------------------Main Section----------------*/

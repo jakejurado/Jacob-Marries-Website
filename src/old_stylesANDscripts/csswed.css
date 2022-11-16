@@ -1,0 +1,705 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../fonts/Papyrus.eot); /* IE9 Compat Modes */
+	src: local('Papyrus'),
+		url('../fonts/Papyrus.eot') format('eot'),
+		url('../fonts/Papyrus.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Papyrus.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/Papyrus.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Papyrus.svg') format('svg');
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+body {
+	--s1vw: 1vw;
+	--s1hvw: 1.5vw;
+	--s2vw: 2vw;
+	--s4vw: 4vw;
+	--s7vw: 7vw;
+	--s10vw: 10vw;
+	--sm7vw: -7vw;
+	--sm20vw: -2vw;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Papyrus/*, fantasy, Goudy Old Style, Palatino Linotype*/;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+#navDiv{
+	width: 100%;
+	float: left;
+	margin-bottom: 8vw;
+	margin-top: 2vw;
+}
+
+.photoNav{
+	float: left;
+	width: 10vw;
+	height: 11vw;
+	margin-left: 1vw;
+	overflow: hidden;
+
+}
+.photoNav img{
+	width: 10vw;
+	margin-top: 0.5vw;
+}
+
+#navUL{
+	float: left;
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	overflow:hidden;
+	height: 11.5vw;
+	width: 75vw;
+}
+
+#navUL li{
+}
+
+.photoli img{
+	width: 11.5vw;
+	float: left;
+	margin-left: 1vw;
+	margin-bottom: 1vw;
+}
+
+
+#contactLine {
+	position: absolute;
+	font-size: 2vw;
+	color:#666;
+	width: 100vw;
+	margin-top: -3vw;
+}
+
+#contactLine a:link {
+	color:#666;
+	text-decoration: none; }
+#contactLine a:visited {
+	color:#666;
+	font-style:normal; }
+#contactLine a:hover {
+	color:#FF5DC7; }
+#contactLine a:active {
+	color:#FF5DC7;
+	font-style:normal;
+}
+
+
+/*-----------------------Main Section----------------*/
+
+/*------WED Content-----*/
+
+#weddingTitle{
+}
+
+#line1{
+	float: right;
+	width: 28%;
+	font-size: 5vw;
+	margin: 0 5.5% -3% 0;
+
+}
+
+
+
+
+#wedContent{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: left;
+}
+
+#centerDiv{
+	width: 100%;
+}
+
+#essay p{
+	font-size: 2vw;
+}
+
+#image01{
+	margin: 0 0 0 -.5%;
+	width: 100%;
+	border: solid;
+}
+
+#firstp{
+	position: absolute;
+	width: 30%;
+	margin-top: -55%;
+	margin-left: 63%;
+	background-color: white;
+	opacity: 80%;
+	padding: 2%;
+	border-radius: 5%;
+}
+
+#secondp{
+	width: 35%;
+	padding: 2%;
+	float: left;
+	margin: 5% 5% 2% 5%;
+	background-color: #FECA0C;
+	border-radius: 5%;
+}
+
+#imagecluster{
+	margin-top: 3%;
+	float: right;
+	width: 50%;
+	margin-bottom: 2%;
+
+}
+#imagecluster img{
+	width: 45%;
+	float: left;
+	border: solid;
+	margin: 1%;
+}
+
+#image05a{
+	width: 100%;
+	border: solid;
+	margin-bottom: 2.5%;
+}
+
+#thirdp{
+	clear: left;
+	position: absolute;
+	margin: -60% 0 3% 25%;
+	width: 45%;
+	border-radius: 5%;
+	padding: 2%;
+	background: white;
+	opacity: 80%;
+}
+
+#image06{
+	width: 100%;
+	border: solid;
+	margin-bottom: 2%;
+}
+
+#fourthp{
+	position: absolute;
+	margin-top: -64%;
+	margin-left: 3%;
+	width: 25%;
+	border: solid;
+	border-radius: 5%;
+	padding: 2%;
+	background-color: white;
+	opacity: 80%;
+}
+
+#yelpquote{
+	float: left;
+	width: 100%
+	padding: 2%;
+	margin-bottom: 5%;
+}
+#image07{
+	float: right;
+	border: solid;
+	margin-right: 2%;
+	width: 30%;
+
+}
+#fifthp{
+	padding: 2%;
+	border: solid;
+	border-radius: 5%;
+	margin: 7% 40% 2% 3%;
+	padding: 2%;
+	background-color: #FABEE0;
+}
+
+#sixthp{
+	clear: left;
+	width: 100%;
+	margin-top 2%;
+	padding 2%;
+}
+
+#image08{
+	margin-bottom: 6%;
+	width: 50%;
+}
+
+
+/*---PROCESS-----*/
+
+#theprocess{
+	position: relative;
+	clear: both;
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border-top: solid;
+}
+
+
+
+
+
+
+#processSteps {
+	position: absolute;
+	margin: 5% 0 0 0;
+	padding: 0 0 0 0;
+	list-style-type: none;
+/*
+	background-image: url('../photos/BackgroundWed.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+*/
+}
+
+#processSteps img{
+	width: 100%;
+}
+
+
+#processSteps li{
+	position: relative;
+	font: Papyrus;
+	font-size: 2vw;
+	width: 100%;
+}
+
+
+
+#processSteps h2{
+	position: relative;
+	display: none;
+}
+
+#processSteps li:nth-child(2){
+	margin-top: -272vw;
+	color: white;
+	text-align: left;
+}
+#processSteps li:nth-child(3){
+	position: relative;
+	margin-top: 17vw;
+	width: 28%;
+	margin-left: 61%;
+}
+#processSteps li:nth-child(4){
+	position: absolute;
+	margin-top: -8vw;
+	margin-left: 8%;
+	width: 38%;
+
+}
+#processSteps li:nth-child(5){
+	width: 37%;
+	margin-left: 51%;
+	margin-top: 31vw;
+
+}
+#processSteps li:nth-child(6){
+	width: 27%;
+	margin-top: -6vw;
+	margin-left: 13%;
+}
+#processSteps li:nth-child(7){
+	width: 27%;
+	margin-left: 7%;
+	margin-top: 30vw;
+
+}
+#processSteps li:nth-child(8){
+	width: 34%;
+	margin-left: 40%;
+	margin-top: 5vw;
+}
+#processSteps li:nth-child(9){
+	width: 33%;
+	margin-left: 63%;
+	margin-top: 15%;
+
+}
+#processSteps li:nth-child(10){
+	width: 37%;
+	margin-left: 14%;
+	margin-top: 10vw;
+}
+#processSteps li:nth-child(11){
+	width: 34%;
+	margin-left: 40%;
+	margin-top: 22vw;
+}
+
+#processSteps li:nth-child(12){
+	color: white;
+	text-align: left;
+}
+
+#processTitle{
+	display: none;
+}
+
+
+/*ipad*/
+@media only screen and (max-width: 1025px) {
+
+
+	/*--------------- TITLE NAVIGATION -----------------------*/
+
+
+	.photoNav{
+		height: 13vw;
+
+	}
+	.photoNav img{
+		margin-top: 2vw;
+	}
+
+	#navUL{
+		height: 14vw;
+	}
+
+	.photoli img{
+		width: 14vw;
+	}
+
+	#contactLine {
+		font-size: 2vw;
+		margin-top: -3vw;
+	}
+
+
+	/*-----------------------Main Section----------------*/
+
+
+	#line1 {
+		float: left;
+		width: 100%;
+		font-size: 6vw;
+		margin: 0 0 2- 0;
+		text-align: right;
+	}
+
+	#backgroundwedimage{
+		position: absolute;
+		display: none;
+	}
+
+	#processSteps {
+		position: static;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		list-style-type: none;
+	}
+
+	#processSteps li{
+		font-family: Papyrus;
+		font-size: 3.5vw;
+		margin: 0;
+	}
+
+	#processSteps h2{
+		display: none;
+	}
+
+	#processSteps li:nth-child(2){
+		margin: 10vw auto 0 auto;
+		font-family: Papyrus;
+		color: black;
+		text-align: center;
+		font-size: 12vw;
+	}
+	/*Connect*/
+	#processSteps li:nth-child(3){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 13% 23% 30% 23%;
+		width: 55%;
+		background-image: url("../photos/backgrounds/background_01Coffee.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(4){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 10% 10% 30% 10%;
+		width: 80%;
+		background-image: url("../photos/backgrounds/background_02Connect.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(5){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 18% 10% 25% 10%;
+		width: 80%;
+		background-image: url("../photos/backgrounds/background_03Ceremony.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(6){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 12% 10% 25% 10%;
+		width: 50%;
+		background-image: url("../photos/backgrounds/background_04Hire.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(7){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 20% 25% 39% 25%;
+		width: 50%;
+		background-image: url("../photos/backgrounds/background_05Contract.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(8){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 20% 10% 37% 10%;
+		width: 80%;
+		background-image: url("../photos/backgrounds/background_06Rehearsal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(9){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 17% 20% 33% 20%;
+		width: 60%;
+		background-image: url("../photos/backgrounds/background_07License.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(10){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 16% 10% 30% 10%;
+		width: 80%;
+		background-image: url("../photos/backgrounds/background_08Wedding.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+	#processSteps li:nth-child(11){
+		position: relative;
+		margin: 0 auto 0 auto;
+		padding: 17% 15% 15% 15%;
+		width: 70%;
+		background-image: url("../photos/backgrounds/background_09After.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		background-size: 100%;
+	}
+
+	#processSteps li:nth-child(12){
+		position: relative;
+		margin: 30vw auto 0 auto;
+		width: 70%;
+	}
+
+	#processTitle{
+		display: inline;
+	}
+}
+
+
+
+/*iphone*/
+@media only screen and (max-width: 600px) {
+
+
+	/*--------------- TITLE NAVIGATION -----------------------*/
+
+
+	.photoNav{
+		height: 16.5vw;
+	}
+	.photoNav img{
+		margin-top: 3.5vw;
+	}
+
+	#navUL{
+		height: 18vw;
+		width: 72vw;
+	}
+	.photoli img{
+		width: 17vw;
+	}
+	#contactLine {
+		font-size: 2vw;
+		margin-top: -3vw;
+	}
+
+
+	/*-----------------------Main Section----------------*/
+
+
+
+	#line1 {
+		font-size: 8vw;
+	}
+
+	#wedContent{
+		margin: 0;
+	}
+
+	#centerDiv{
+		margin: 0;
+	}
+
+	#essay p{
+		font-size: 6vw;
+	}
+
+	#image01{
+		position: relative;
+		margin: 0 0 2vw -1vw;
+	}
+
+	#firstp{
+		position: relative;
+		width: 100%;
+		margin: 0 0 2vw 0;
+		opacity: 100%;
+		padding: 0;
+	}
+
+	#secondp{
+		clear: both;
+		width: 99%;
+		padding: 1%;
+		float: none;
+		margin: 0 0 2vw 0;
+		background-color: #FECA0C;
+	}
+
+	#imagecluster{
+		margin: 0 0 2vw 0;
+		padding: 0;
+		float: none;
+		width: 100%;
+
+	}
+	#imagecluster img{
+		width: 46%;
+		float: left;
+		border: solid;
+		margin: 1%;
+	}
+
+	#image05a{
+		width: 99%;
+		border: solid;
+		margin: 0 -1vw 2vw 0;
+	}
+
+	#thirdp{
+		clear: left;
+		position: relative;
+		margin: 0 auto 2vw auto;
+		width: 99%;
+		padding: 1%;
+		opacity: 100%;
+	}
+
+	#image06{
+		width: 99%;
+		border: solid;
+		margin: 0 -1vw 2vw 0;
+	}
+
+	#fourthp{
+		position: relative;
+		width: 99%;
+		margin: 0 -1vw 2vw 0;
+		border: none;
+		padding: 1%;
+		opacity: 100%;
+	}
+
+	#yelpquote{
+		float: left;
+		width: 100%
+		padding: 1%;
+		border: none;
+		margin: 0 0 2vw 0;
+	}
+	#image07{
+		float: none;
+		border: solid;
+		margin: 2vw auto 2vw auto;
+		width: 99%;
+
+
+	}
+	#fifthp{
+		padding: 1%;
+		width: 90%;
+		border: none;
+		border-radius: 2vw;
+		margin: 2vw auto 2vw auto;
+		padding: 2%;
+
+		background-color: #FABEE0;
+	}
+
+	#sixthp{
+		clear: left;
+		width: 100%;
+		margin: 0 0 2vw 0;
+		padding 2%;
+	}
+
+	#image08{
+		margin: 0 0 10vw 0;
+		width: 50%;
+	}
+
+
+
+
+
+}

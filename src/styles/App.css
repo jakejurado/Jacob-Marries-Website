@@ -1,0 +1,278 @@
+
+@font-face{
+	font-family: myPapyrus;
+	src:url(../../public/font/Papyrus.woff) format('woff'), url(../../public/font/Papyrus.woff2) format('woff');
+  font-weight:600;
+  font-style: normal;
+}
+
+body {
+	--font12: 12vw;
+	--font2: 2vw;
+	--font3: 3vw;
+}
+
+@media screen and (min-width: 1200px) {
+  body{
+    --font12: 145px;
+    --font2: 25px;
+    --font3: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body{
+    --font12: 12vw;
+    --font2: 12px;
+    --font3: 4vw;
+  }
+}
+
+
+
+
+/*--------------- TITLE NAVIGATION -----------------------*/
+
+#titleSection {
+	position: relative;
+  text-align: center;
+  margin-bottom: 5%;
+  
+}
+
+#theTitleDiv{
+  margin: 8% auto 0 auto;
+  color: #989534;
+  font-size: var(--font12);
+  max-width: 1200px;
+  font-family: myPapyrus;
+  text-shadow: 2px 4px grey;
+  line-height: 100%;
+}
+
+
+#contactLine a:link {
+	color:#b5b5b5;
+	text-decoration: none; }
+#contactLine a:visited {
+	color:#b5b5b5;
+	font-style:normal; }
+#contactLine a:hover {
+  text-shadow: 1px 1px #b5b5b5;
+	color:#FF5DC7; }
+#contactLine a:active {
+	color:#FF5DC7;
+	font-style:normal;
+}
+
+.ulBox{
+  width: 65%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2%;
+}
+
+#contactLine{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  font-family:monospace;
+  color:#b5b5b5;
+  max-width: 1200px;
+	font-size: var(--font2);
+}
+
+#contactLine li:hover{
+  -webkit-animation: rotation .4s linear;
+  animation: rotation .4s linear;
+}
+
+
+
+
+/*-----------------------MAIN NAVIGATION----------------*/
+
+@-webkit-keyframes rotation {
+  0% {-webkit-transform: rotate(0deg);}
+  12% {-webkit-transform: rotate(7deg);}
+  24% { -webkit-transform: rotate(0deg);}
+  36% {-webkit-transform: rotate(-4deg);}
+  48% {-webkit-transform: rotate(0deg);}
+  60% {-webkit-transform: rotate(3deg);}
+  72% { -webkit-transform: rotate(-1deg);}
+  84% {-webkit-transform: rotate(1deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+
+#mainNavigation{
+	position: relative;
+	width: 90%;
+	padding: 0;
+	margin: 0 auto 2% auto;
+  max-width: 1200px;
+}
+
+#tagwords{
+  display: relative;
+  width: 98%;
+  font-size: var(--font3);
+  
+  color: #666;
+  font-family: Papyrus;
+  text-align: right;
+  z-index: 1;
+  font-family: monospace;
+}
+
+
+
+#infoLinks{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin:0;
+  list-style-type: none;
+  
+}
+
+
+.navPhotos{
+  width: 27vw;
+  height: 27vw;
+  max-width: 325px;
+  max-height: 325px;
+  margin: 3px;
+  box-shadow: 3px 3px 10px black;
+  transition: width 1s, transform 1s;
+}
+
+.navPhotos img{
+  width: 100%;
+}
+
+.navPhotos:hover{
+  -webkit-animation: rotation .4s linear;
+  animation: rotation .4s linear;
+  box-shadow: none;
+  border: inset;
+}
+
+.img_clicked{
+  transform: rotate(360deg) scale(1.5);
+}
+
+
+
+#last{
+	display: none;
+}
+
+/*iphone*/
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .ulBox{
+    margin-top: 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+	.navPhotos {
+    width: 42vw;
+    height: 42vw
+	}
+
+  .navPhotos:hover {
+    border: none;
+  }
+
+	#last{
+		display: inline;
+	}
+
+}
+
+
+@media screen and (max-width: 450px) {
+  .ulBox{
+    width: 85%;
+  }
+
+  #contactLine{
+    margin-top: 5%;
+    flex-direction: column;
+  }
+
+  #contactLine li{
+    /* align-self:flex-end; */
+    background-color: #989534;
+    margin-bottom: 4px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 0 4px 0;
+  }
+
+  #contactLine li:nth-child(1){
+    width: 50%;
+  }
+  #contactLine li:nth-child(3){
+    width: 75%;
+  }
+  #contactLine li:nth-child(5){
+    width: 95%;
+  }
+
+  #contactLine li:hover{
+    background-color: white;
+    border: solid;
+    border-width: thin;
+  }
+
+  #contactLine a:link {
+    color:white;
+    text-decoration: none; }
+  #contactLine a:visited {
+    color: white;
+    font-style:normal; }
+  #contactLine a:hover {
+    background-color: white;
+    color:#989534; }
+  #contactLine a:active {
+    color:#989534;
+    font-style:normal;
+  }
+
+  .hiddenLi{
+    display: none;
+  }
+
+
+	.navPhotos {
+    width: 80vw;
+    height: 80vw
+	}
+  .navPhotos:hover {
+    border: none;
+  }
+	#last{
+		display: inline;
+	}
+
+  .img_clicked{
+    transform: rotate(360deg);
+  }
+
+}
+
+

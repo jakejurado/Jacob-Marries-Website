@@ -1,0 +1,77 @@
+#container{
+  width: 100%;
+  min-width: 832px;
+  text-align: center;
+}
+
+h1{
+  font-size: 124px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.puzzle {
+  width: 832px;
+  height: 832px;
+  border: solid;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  touch-action: manipulation;
+}
+
+.puzzleFinished {
+  width: 832px;
+  height: 832px;
+  border: solid;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  background-image:url(../photos/JacobMarriesComplete.jpg);
+  background-image: no-repeat;
+}
+
+.pieces {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: dashed;
+  margin: 1px 1px 1px 1px;
+  padding: 0px;
+  touch-action: manipulation;
+}
+
+#one{
+	background-image:url(../photos/Box01.jpg)}
+#two{
+	background-image:url(../photos/Box02.jpg) }
+#three{
+	background-image:url(../photos/Box03.jpg) }
+#four{
+	background-image:url(../photos/Box04.jpg) }
+#five{
+	background-image:url(../photos/Box05.jpg) }
+#six{
+	background-image:url(../photos/Box06.jpg) }
+#seven{
+	background-image:url(../photos/Box07.jpg) }
+#eight{
+	background-image:url(../photos/Box08.jpg) }
+#nine{
+	background-image:url(../photos/Box09.jpg) }
+#ten{
+	background-image:url(../photos/Box10.jpg) }
+#eleven{
+	background-image:url(../photos/Box11.jpg) }
+#twelve{
+	background-image:url(../photos/Box12.jpg) }
+#thirteen{
+	background-image:url(../photos/Box13.jpg) }
+#fourteen{
+	background-image:url(../photos/Box14.jpg) }
+#fifteen{
+	background-image:url(../photos/Box15.jpg) }
+#sixteen{
+	background-image:url(../photos/Box16.jpg) }
