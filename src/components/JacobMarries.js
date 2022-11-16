@@ -33,9 +33,8 @@ import elope_gif from '../../public/photos/tiles_loading/elope/elope.gif';
 import wedMobile_gif from '../../public/photos/tiles_loading/wed/wedMobile.gif';
 import elopeMobile_gif from '../../public/photos/tiles_loading/elope/elopeMobile.gif';
 
-
+//COMPONENT for the landing page
 function JacobMarries(){
-
 //Set state for all the images on the page.
   const [weddingImage, setWeddingImage] = useState(wedding_option);
   const [elopeImage, setElopeImage] = useState(elope_option);
@@ -88,9 +87,6 @@ function JacobMarries(){
     setTimeout(()=>{swapTilesAnimation()}, 0);
   }, [])
   
-
-
-
 
   //ANIMATE TILE WHILE HOVER
   //Swaps the image when mouseenters to a gif and then back to image wheb mouseleaves
@@ -190,16 +186,10 @@ function JacobMarries(){
 
   //add 'img_clicked' class which animates (rotates & enlarges) the tile before going to next page
   function handleClick(e){
-
-    //adds animation to the clicked element (roates and enlarges)
-    e.currentTarget.parentNode.classList.add('img_clicked');
-    
-    //grab the URL from the tile that was clicked
-    const url = findUrlPath(e);
-
-    //waits for the animation to stop before continuing to URL
+    e.currentTarget.parentNode.classList.add('img_clicked');  //adds animation to the clicked element (roates and enlarges)
+    const url = findUrlPath(e); //grab the URL from the tile that was clicked
     setTimeout(()=>{
-      window.location = url
+      window.location = url  //waits for the animation to stop before continuing to URL
     }, 800)
   }
 
