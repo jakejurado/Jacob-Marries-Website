@@ -1,5 +1,5 @@
 import React from 'react';
-import "../stylesANDscripts/csselope2.css"
+import "../old_stylesANDscripts/csselope2.css"
 
 function Elopement(){
 
