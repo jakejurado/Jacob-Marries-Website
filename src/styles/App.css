@@ -41,7 +41,7 @@ body {
 }
 
 #theTitleDiv{
-  margin: 8% auto 0 auto;
+  margin: 4% auto 0 auto;
   color: #989534;
   font-size: var(--font12);
   max-width: 1200px;
@@ -118,7 +118,8 @@ body {
 
 #tagwords{
   display: relative;
-  width: 98%;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
   font-size: var(--font3);
   
   color: #666;
@@ -133,10 +134,11 @@ body {
 #infoLinks{
   display: flex;
   width: 100%;
+  max-width: 1000px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
-  margin:0;
+  margin:0 auto 0 auto;
   list-style-type: none;
   
 }
