@@ -1,0 +1,75 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../../public/font/Papyrus.woff) format('woff'), url(../../public/font/Papyrus.woff2) formate('woff2');
+  font-weight:600;
+  font-style: normal;
+}
+
+nav{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navDiv{
+  display: flex;
+  flex-wrap: none;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#navUL{
+  display:flex;
+  flex-direction: row;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.photoli{
+  margin: 5px;
+}
+.photoli img{
+  width: 12.5vw;
+  height: 12.5vw;
+  max-width: 150px;
+  max-height: 150px;
+  box-shadow: 2px 2px 5px black;
+}
+
+
+.photoNav img{
+  width: 5vw;
+  height: 12.5vw;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+
+.contact{
+  font-family:monospace;
+  font-size: 1.5vw;
+  text-align: right;
+  margin: 0 calc(5vw + 5px) 0  calc(5vw + 5px);
+  color: grey;
+}
+
+#contactDiv{
+  margin: 0;
+  padding: 0;
+  margin: 0 calc(5vw + 5px) 0  calc(5vw + 5px);
+
+}
+
+#contactDiv ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 calc(5vw + 5px) 0 calc(5vw + 5px);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
