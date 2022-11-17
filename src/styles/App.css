@@ -41,7 +41,7 @@ body {
 }
 
 #theTitleDiv{
-  margin: 4% auto 0 auto;
+  margin: 4% auto -2% auto;
   color: #989534;
   font-size: var(--font12);
   max-width: 1200px;
@@ -181,6 +181,10 @@ body {
 
 
 @media screen and (min-width: 1200px) {
+  #theTitleDiv {
+    margin: 4% auto -2% auto;
+  }
+
   .ulBox{
     margin-top: 5px;
   }

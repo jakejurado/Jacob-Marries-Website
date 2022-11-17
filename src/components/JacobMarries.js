@@ -60,12 +60,12 @@ function JacobMarries(){
     const allTiles = Object.values(document.getElementsByClassName('navPhotos'));
     //contains the indexes of the tiles, thus the movements
     const movement = [  
-      [13, 1, 2, 3, 4, 5, 6, 0, 8, 9, 10, 11, 12, 7],
-      [0, 13, 2, 3, 4, 5, 6, 1, 8, 9, 10, 11, 12, 7],
-      [0, 1, 13, 3, 4, 5, 6, 2, 8, 9, 10, 11, 12, 7],
-      [0, 1, 2, 3, 4, 13, 6, 5, 8, 9, 10, 11, 12, 7],
-      [0, 1, 2, 3, 13, 5, 6, 4, 8, 9, 10, 11, 12, 7],
-      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+      [13, 1, 2, 3, 4, 5, 6, 0, 8, 9, 10, 11, 13, 12, 7],
+      [0, 13, 2, 3, 4, 5, 6, 1, 8, 9, 10, 11, 13, 12, 7],
+      [0, 1, 13, 3, 4, 5, 6, 2, 8, 9, 10, 11, 13, 12, 7],
+      [0, 1, 2, 3, 4, 13, 6, 5, 8, 9, 10, 11, 13, 12, 7],
+      [0, 1, 2, 3, 13, 5, 6, 4, 8, 9, 10, 11, 13, 12, 7],
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,  13, 12, 14],
     ];
 
     const addTime = 450;
@@ -176,6 +176,9 @@ function JacobMarries(){
       case 'blogTile':
         url ='https://blog.jacobmarries.com/'
         break;
+      case 'lookTile':
+        url ='https://en.wikipedia.org/wiki/Fred_Armisen'
+        break;
       default:
         console.log('error');
         break;
@@ -214,7 +217,7 @@ function JacobMarries(){
   useEffect(() => {
     animationForMobile();
   }, []);
-  
+                                                               
 
 
   return (
@@ -237,6 +240,7 @@ function JacobMarries(){
           <li className="navPhotos" id='blog'><img className='imgNav' src={blogImage} onMouseEnter={handleMouse} onMouseLeave={handleMouse} onClick={handleClick} alt="a drawing of a computer open to my blog page" id="blogTile" /></li> 
           <li className="navPhotos" id='looklike'><img className='imgNav' src={lookImage} onMouseEnter={handleMouse} onMouseLeave={handleMouse} onClick={handleClick} alt="an image that compares how I look to Fred Armisen" id="lookTile" /></li> 
           <li className="navPhotos" id='lastLi'> <img className='imgNav' src={last_option}  alt="A pink tile to even things out" id="lastTile" loading="lazy" /> </li> 
+          <li className="navPhotos" id='lastLi2'> <img className='imgNav' src={last_option}  alt="A pink tile to even things out" id="lastTile" loading="lazy" /> </li> 
         </ul>
         
       </div>
