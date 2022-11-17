@@ -32,18 +32,55 @@ function Navbar(){
   function handleScroll(e){
     console.log('enter handleScroll')
     const id= e.target.id;
-    const dom = document.getElementById(id);
-    const endPoint = id === 'arrowL' ? 562 : 0
-    let addInterval = id === 'arrowL' ? (50 * 1) : (50 * -1);
-    scrolling = true;
-    console.log(id, dom, endPoint, addInterval)
+    const dom = document.getElementById('ceremony');
+    // dom.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
+    // console.log(dom);
+    // const endPoint = id === 'arrowL' ? 562 : 0
+    // let addInterval = id === 'arrowL' ? (50 * 1) : (50 * -1);
+    // scrolling = true;
+    // console.log(id, dom, endPoint, addInterval)
     
-    while(dom.scrollLeft !== endPoint && scrolling){
-      let currentPoint = dom.scrollLeft;
-      console.log({currentPoint})
-      dom.scrollPoint = addInterval;
+    let all_boxes = document.getElementsByClassName('photoli');
+    const navBoxes = Object.values(all_boxes);
+    
+    const bxIndex = [Infinity, -Infinity];
+    for(let i = 0, j = 0; i < navBoxes.length; i++){
+      const curr = navBoxes[i];
+      const currInView = isInViewport(curr);
+      if(currInView & i < bxIndex[0]) bxIndex[0] = i;
+      if(currInView & i > bxIndex[1]) bxIndex[1] = i;
     }
 
+    const loopNavArray = loopArray(bxIndex[1] + 1, navBoxes)
+
+    const intervalId = setInterval(()=>{
+      loopNavArray();
+    }, 500);
+    // let doc = navBoxes[bxIndex[1] + 1];
+    // doc.scrollIntoView({behavior: "smooth", inline: "end"});
+  }
+
+  function loopArray(nextIndex, arrOfDom){
+    const lastIndex = arrOfDom.length - 1;
+    return (() =>{
+      console.log('still going');
+      if(nextIndex !== lastIndex){
+        arrOfDom[nextIndex].scrollIntoView({behavior: "smooth", inline: "end"});
+        nextIndex++;
+      }
+    })
+  }
+
+
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
   }
 
 
