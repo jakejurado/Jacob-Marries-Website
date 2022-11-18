@@ -5,6 +5,34 @@
   font-style: normal;
 }
 
+body {
+	--tileSize: 12.5vw;
+  --fontSize: 1.5vw
+}
+
+@media screen and (min-width: 1000px) {
+  body{
+    --fontSize: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    --tileSize: 20vw;
+    --fontSize: 2vw
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body{
+    --tileSize: 27.5vw;
+    --fontSize: 2.5vw
+  }
+}
+
+
+
+
 nav{
   max-width: 1200px;
   margin-left: auto;
@@ -30,6 +58,7 @@ nav{
   overflow-x: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  scroll-behavior: auto;
 }
 
 #navUL{
@@ -45,8 +74,8 @@ nav{
   margin: 5px;
 }
 .photoli img{
-  width: 12.5vw;
-  height: 12.5vw;
+  width: var(--tileSize);
+  height: var(--tileSize);
   max-width: 150px;
   max-height: 150px;
   box-shadow: 2px 2px 5px black;
@@ -55,7 +84,7 @@ nav{
 
 .photoNav img{
   width: 5vw;
-  height: 12.5vw;
+  height: var(--tileSize);
   max-width: 150px;
   max-height: 150px;
 }
@@ -63,7 +92,7 @@ nav{
 
 .contact{
   font-family:monospace;
-  font-size: 1.5vw;
+  font-size: var(--fontSize);
   text-align: right;
   margin: 0 calc(5vw + 5px) 0  calc(5vw + 5px);
   color: grey;
@@ -83,4 +112,21 @@ nav{
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .photoNav{
+    display:none;
+  }
+
+  .contact{
+    margin:0;
+  }
+
+  #contactDiv{
+    margin: 0 0 0 1vw;
+  }
+
 }

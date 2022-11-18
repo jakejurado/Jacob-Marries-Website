@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/navbar.css";
 import wedding_option from '../../public/photos/01wedding01.jpg'
 import wedding_option2 from '../../public/photos/01wedding02.jpg'
@@ -27,48 +27,119 @@ import left_arrow from '../../public/photos/arrow2l.png'
 import right_arrow from '../../public/photos/arrow2r.png'
 
 function Navbar(){
+  const [intervalId, setIntervalId] = useState(null);
 
-  let scrolling = false;
-  function handleScroll(e){
-    console.log('enter handleScroll')
-    const id= e.target.id;
-    const dom = document.getElementById('ceremony');
-    // dom.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
-    // console.log(dom);
-    // const endPoint = id === 'arrowL' ? 562 : 0
-    // let addInterval = id === 'arrowL' ? (50 * 1) : (50 * -1);
-    // scrolling = true;
-    // console.log(id, dom, endPoint, addInterval)
-    
-    let all_boxes = document.getElementsByClassName('photoli');
-    const navBoxes = Object.values(all_boxes);
-    
-    const bxIndex = [Infinity, -Infinity];
-    for(let i = 0, j = 0; i < navBoxes.length; i++){
-      const curr = navBoxes[i];
-      const currInView = isInViewport(curr);
-      if(currInView & i < bxIndex[0]) bxIndex[0] = i;
-      if(currInView & i > bxIndex[1]) bxIndex[1] = i;
-    }
 
-    const loopNavArray = loopArray(bxIndex[1] + 1, navBoxes)
+  function handleArrowHover(e){
+    console.log(e.type)
+    //If mouse stops hovering then stop the scrolling
+    if(e.type==='mouseleave'){
+      console.log('mouseleave');
+      clearInterval(intervalId);
+      
+    //if mouse hovers arrow then start scrolling
+    } else {  //mouseenter
+      console.log('mouseenter')
 
-    const intervalId = setInterval(()=>{
-      loopNavArray();
-    }, 500);
-    // let doc = navBoxes[bxIndex[1] + 1];
-    // doc.scrollIntoView({behavior: "smooth", inline: "end"});
-  }
+      //grab which arrow was hovered
+      const id= e.target.id;
+      
+      //put all box dom elements into an array.
+      let all_boxes = document.getElementsByClassName('photoli');
+      const navBoxes = Object.values(all_boxes);
 
-  function loopArray(nextIndex, arrOfDom){
-    const lastIndex = arrOfDom.length - 1;
-    return (() =>{
-      console.log('still going');
-      if(nextIndex !== lastIndex){
-        arrOfDom[nextIndex].scrollIntoView({behavior: "smooth", inline: "end"});
-        nextIndex++;
+      // iterate through the array and find the part that is in view.
+      const bxIndex = [Infinity, -Infinity];
+      for(let i = 0, j = 0; i < navBoxes.length; i++){
+        const curr = navBoxes[i];
+        const currInView = isInViewport(curr);
+        if(currInView & i < bxIndex[0]) bxIndex[0] = i;
+        if(currInView & i > bxIndex[1]) bxIndex[1] = i;
       }
-    })
+
+      const lastBoxIndex = navBoxes.length;
+      let nextBoxIndex = bxIndex[1] + 1;
+
+      // navBoxes[nextBoxIndex].scrollIntoView({behavior: "smooth", inline: "end"});
+      // nextBoxIndex++;
+
+      let currInterval = setInterval(()=>{
+        console.log('interval');
+        const dom = document.getElementById('outerNavUL');
+        
+        // if(nextBoxIndex >= lastBoxIndex) {
+        if(isInViewport(document.getElementById('blogTile'))) {
+          clearInterval(currInterval);
+        }else{
+          // navBoxes[nextBoxIndex].scrollIntoView({behavior: "smooth", inline: "end"});
+          // nextBoxIndex++;
+          dom.scrollBy(2, 0);
+        }
+      }, 7)
+      setIntervalId(currInterval);
+    }
+  }
+  
+  //scrolling function for the navbar.
+  function navBarScrolling(e){
+    //If mouseup then stop the scrolling
+    if(e.type==='mouseup'){
+      clearInterval(intervalId);
+      
+    //if mousedown then start scrolling...
+    } else { 
+
+      //put all the tile dom elements into an array.
+      let all_tiles = document.getElementsByClassName('photoli');
+      const tileArray = Object.values(all_tiles);
+
+      //Depending which button (left or right) is pushed, we'll want to scroll different directions.
+      //grab the id of the clicked arrow
+      const id= e.target.id;
+      
+      //if right arrow then reverse the tileArray, so that we can use the same code below.
+      if(id === 'rightArrow') {
+        tileArray.reverse();
+      }
+
+      // iterate through the array and find the first and last index of tiles that are in view
+      const bxIndex = [Infinity, -Infinity];
+      for(let i = 0, j = 0; i < tileArray.length; i++){
+        const curr = tileArray[i];
+        const currInView = isInViewport(curr);
+        if(currInView & i < bxIndex[0]) bxIndex[0] = i;
+        if(currInView & i > bxIndex[1]) bxIndex[1] = i;
+      }
+      
+      //store the last tile dom element from the array and the index of the next tile that is out of view
+      let nextTileIndex = bxIndex[1] + 1; 
+      const lastTileElement = tileArray[tileArray.length - 1]
+
+      //depending on the direction of the scroll, we'll need to adjust the inline proeprty of scrollIntoView
+      const inlineProperty = id ==='rightArrow' ? 'end' : 'start'
+      
+      //if the last tile is not already in view then scroll.
+      if(!isInViewport(lastTileElement)){
+        tileArray[nextTileIndex].scrollIntoView({behavior: "smooth", inline: inlineProperty});
+        nextTileIndex++;
+      }
+      
+      //set the interval to continue to scroll as long as mousedown or we reach the last tile
+      let currInterval = setInterval(()=>{
+        console.log('interval');
+        
+        //if we reach the end then clear the interval, otherwise increment one at a time
+        if(isInViewport(lastTileElement)) {
+          console.log('do we enter');
+          clearInterval(currInterval);
+        }else{
+          tileArray[nextTileIndex].scrollIntoView({behavior: "smooth", inline: inlineProperty});
+          nextTileIndex++;
+        }
+      }, 1000)
+      //set state so that the interval can be cleared on mouseup.
+      setIntervalId(currInterval);
+    }
   }
 
 
@@ -93,7 +164,7 @@ function Navbar(){
         </ul>
       </div>
       <div id="navDiv">
-        <div className="photoNav" id='arrowL' onMouseEnter={handleScroll} onMouseLeave={()=>scrolling = false}><img src={left_arrow}/></div>
+        <div className="photoNav" id='arrowL' onMouseDown={navBarScrolling} onMouseUp={navBarScrolling}><img src={left_arrow} id='leftArrow' /></div>
         <div id='outerNavUL'>
           <ul id="navUL">
             <li className="photoli" id='home'><a href="index.html" ><img src={last_option} alt="a simple 4 line drawing of a home to go back to the main landing page" id="homeTile" /></a></li>
@@ -110,7 +181,7 @@ function Navbar(){
             <li className="photoli" id='blog'><a href="http://blog.jacobmarries.com"><img src={blog_option} alt="a drawing of a computer open to my blog page" id="blogTile"/></a></li>
           </ul>
         </div>
-        <div className="photoNav" id='arrowR'><img src={right_arrow} width='25px'/></div>
+        <div className="photoNav" id='arrowR' onMouseDown={navBarScrolling} onMouseUp={navBarScrolling}><img src={right_arrow} width='25px' id='rightArrow' /></div>
       </div>
       <div className='contact'>
         Contact
