@@ -5,24 +5,38 @@
   font-style: normal;
 }
 
+@-webkit-keyframes rotation {
+  0% {-webkit-transform: rotate(0deg);}
+  12% {-webkit-transform: rotate(7deg);}
+  24% { -webkit-transform: rotate(0deg);}
+  36% {-webkit-transform: rotate(-4deg);}
+  48% {-webkit-transform: rotate(0deg);}
+  60% {-webkit-transform: rotate(3deg);}
+  72% { -webkit-transform: rotate(-1deg);}
+  84% {-webkit-transform: rotate(1deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
 body {
 	--tileSize: 12.5vw;
-  --fontSize: 1.5vw
+  --fontSize: 1.5vw;
+  --grey: grey;
+  --pink: #FF5DC7;
+  --black: black;
 }
+
 
 @media screen and (min-width: 1000px) {
   body{
     --fontSize: 18px;
   }
 }
-
 @media screen and (max-width: 600px) {
   body{
     --tileSize: 20vw;
     --fontSize: 2vw
   }
 }
-
 @media screen and (max-width: 450px) {
   body{
     --tileSize: 27.5vw;
@@ -64,7 +78,6 @@ nav{
 #navUL{
   display:flex;
   flex-direction: row;
-  
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -78,9 +91,13 @@ nav{
   height: var(--tileSize);
   max-width: 150px;
   max-height: 150px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px var(--black);
 }
 
+.photoli:hover{
+  -webkit-animation: rotation .4s linear;
+  animation: rotation .4s linear;
+}
 
 .photoNav img{
   width: 5vw;
@@ -89,13 +106,20 @@ nav{
   max-height: 150px;
 }
 
-
 .contact{
   font-family:monospace;
   font-size: var(--fontSize);
   text-align: right;
   margin: 0 calc(5vw + 5px) 0  calc(5vw + 5px);
+  color: var(--grey);
+}
+
+.contact a{
+  text-decoration: none;
   color: grey;
+}
+.contact a:hover{
+  color: var(--pink);
 }
 
 #contactDiv{
@@ -120,13 +144,15 @@ nav{
   .photoNav{
     display:none;
   }
-
   .contact{
     margin:0;
   }
-
   #contactDiv{
     margin: 0 0 0 1vw;
   }
+} 
 
+
+.img_clicked{
+  transform: rotate(360deg);
 }
