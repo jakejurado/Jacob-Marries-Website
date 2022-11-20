@@ -3,6 +3,7 @@ import { findUrlPath } from '../functions/findUrlPath';
 import { swapTiles } from '../functions/swapTiles';
 
 import "../styles/navbar.css";
+
 import home_option from '../../public/photos/16home01.jpg'
 import wedding_option from '../../public/photos/01wedding01.jpg'
 import elope_option from '../../public/photos/02elope01.jpg'
@@ -133,7 +134,6 @@ function Navbar(){
       setIntervalId(currInterval);
     }
   }
-
 
   //add 'img_clicked' class which animates (rotates & enlarges) the tile before going to next page
   function handleClick(e){
