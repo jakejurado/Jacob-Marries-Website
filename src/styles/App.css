@@ -107,6 +107,12 @@ body {
   100% {-webkit-transform: rotate(0deg);}
 }
 
+@-webkit-keyframes grow-shrink {
+  0% {-webkit-transform: scale(1)}
+  50% {-webkit-transform: scale(1.5)}
+  100% { -webkit-transform: scale(1);}
+}
+
 
 #mainNavigation{
 	position: relative;
@@ -277,6 +283,8 @@ body {
 
   .img_clicked{
     transform: rotate(360deg);
+    /* -webkit-animation: grow-shrink .5s linear;
+    animation: grow-shrink .5s linear; */
   }
 
 }
