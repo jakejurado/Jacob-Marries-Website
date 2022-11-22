@@ -1,0 +1,195 @@
+@font-face{
+	font-family: Papyrus;
+	src:url(../../public/font/Papyrus.woff) format('woff'), url(../../public/font/Papyrus.woff2) formate('woff2');
+  font-weight:600;
+  font-style: normal;
+}
+
+@-webkit-keyframes rotation {
+  0% {-webkit-transform: rotate(0deg);}
+  12% {-webkit-transform: rotate(7deg);}
+  24% { -webkit-transform: rotate(0deg);}
+  36% {-webkit-transform: rotate(-4deg);}
+  48% {-webkit-transform: rotate(0deg);}
+  60% {-webkit-transform: rotate(3deg);}
+  72% { -webkit-transform: rotate(-1deg);}
+  84% {-webkit-transform: rotate(1deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+body {
+	--tileSize: 12.5vw;
+  /* --fontSize: 18px; */
+  --fontSize: 1.5vw;
+  --arrowWidth: 2vw;
+  --arrowHeight: 7vw;
+  --grey: grey;
+  --pink: #FF5DC7;
+  --black: black;
+  --yellow: #989534;
+}
+
+
+@media screen and (min-width: 1000px) {
+  body{
+    --tileSize: 12.5vw;
+    --arrowWidth: 2vw;
+    --arrowHeight: 7vw;
+    --fontSize: 1.5vw;
+    --grey: grey;
+    --pink: #FF5DC7;
+    --black: black;
+  }
+}
+@media screen and (max-width: 600px) {
+  body{
+    --tileSize: 20vw;
+    --fontSize: 2vw
+  }
+}
+@media screen and (max-width: 450px) {
+  body{
+    --tileSize: 27.5vw;
+    --fontSize: 2.5vw
+  }
+}
+
+
+nav{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+}
+
+/* Phone and Email */
+.photoNav{
+  width: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrowL{
+  z-index: 1;
+}
+
+#rightArrow{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.photoNav img{
+  height: var(--  );
+  width: var(--arrowWidth);
+}
+
+
+/* Middle Section that covers contact and tile */
+#cover{
+  width: 92%;
+  border-left: solid thin var(--grey);
+  border-right: solid thin var(--grey);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+
+/* Contact */
+#contactDiv ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.contact{
+  font-family:monospace;
+  font-size: var(--fontSize);
+}
+
+.contact a{
+  text-decoration: none;
+  color: var(--grey);
+}
+.contact a:hover{
+  color: var(--pink);
+}
+
+.a_style{
+  margin: 0 5px 0 5px;
+}
+
+/* Tiles */
+/* Hide scrollbar for Chrome, Safari and Opera */
+#outerNavUL::-webkit-scrollbar {
+  display: none;
+}
+
+#outerNavUL{
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: auto;
+}
+
+#navUL{
+  display:flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#navUL{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photoli{
+  margin: 0 3px 0 3px;
+  
+}
+.photoli img{
+  width: var(--tileSize);
+  box-shadow: 2px 2px 5px black;
+}
+
+.photoli:hover{
+  -webkit-animation: rotation .4s linear;
+  animation: rotation .4s linear;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  #cover{
+    width: 100%;
+    border: none;
+  }
+  
+  .photoNav{
+    display:none;
+  }
+  .contact{
+    margin:0;
+  }
+  #contactDiv{
+    margin: 0 0 0 1vw;
+  }
+} 
+
+
+.img_clicked{
+  transform: rotate(360deg);
+}

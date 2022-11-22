@@ -26,14 +26,13 @@ import blog_option from '../../public/photos/12blog01.jpg'
 import blog_option2 from '../../public/photos/12blog02.jpg';
 
 
-
 //ANIMATE TILE WHILE HOVER
   //Swaps the image when mouseenters to a gif and then back to image wheb mouseleaves
 export function swapTiles(e){
   const mouseEvent = e._reactName;
   switch(e.target.id){
     case 'homeTile':
-      e.target.src = mouseEvent === 'onMouseEnter' ? home_option2 : home_option
+      e.target.src = mouseEvent === 'onMouseEnter' ? home_option2 : home_option;
       // homeImage === home_option ? setHomeImage(home_option2) : setHomeImage(home_option);
       break;
     case 'weddingTile':
@@ -89,7 +88,7 @@ export function swapTiles(e){
       lookImage === look_option ? setLookImage(look_option2) : setLookImage(look_option);
       break;
     default:
-      console.log('error, tile id not found');
+      console.log('error, tile id not found', e.target.id);
       break;
   }
 }
