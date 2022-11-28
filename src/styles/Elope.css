@@ -1,0 +1,188 @@
+body{
+  --fontSizeH1: 7vw;
+
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+.fade-out {
+  animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 2s;
+  -moz-animation: fadeOut ease 2s;
+  -o-animation: fadeOut ease 2s;
+  -ms-animation: fadeOut ease 2s;
+}
+
+
+
+
+#elopeSection_01{
+  height: 2750px;
+}
+
+.sectionCover{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  overflow: scroll;
+
+  /* background-image: url('../../public/photos/PhotoR/l/JacobMarries_Art03.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+h1{
+  position: fixed;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: 5vw;
+  font-family: papyrus;
+  font-size: var(--fontSizeH1)
+}
+
+#block01{
+  position: fixed;
+  display: none;
+}
+
+.block{
+  width: 100%;
+  height: 100%;
+}
+
+.blockCover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.blockCover p{
+  border-radius: 25px;
+  border: solid;
+  text-align: center;
+  font-family: monospace;
+  padding: 3vw;
+  width: 75vw;
+  margin: 0;
+  background-color: whitesmoke;
+  box-shadow: 5px 6px 15px black;
+}
+
+#block02{
+  position: fixed;
+  display: none;
+}
+
+
+#elopeSection_02{
+  height: 3000px;
+}
+
+#block03{
+  position: fixed;
+  display: block;
+}
+
+#block04{
+  position: fixed;
+  display: none;
+}
+
