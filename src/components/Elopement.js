@@ -10,7 +10,7 @@ function Elopement(){
       <div id="background01">
         <div className='gone'><p>elope</p></div>
         <div id='par01'>
-          <p>An elopement is for couples looking to get married within the next couple of weeks.  You can come alone or with a handful of friends or family.</p>
+          <p>An elopement is for couples who are looking to get married within the next couple of weeks.  You can come alone or with a handful of friends or family.</p>
           <p>It is intimate, focused, and romantic.</p>
           <p>Some of the most magical moments I’ve experienced as an officiant, have taken place with nobody else around except myself and two other people committing themselves to each other in marriage.</p>
 
